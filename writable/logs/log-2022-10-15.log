@@ -1,0 +1,9 @@
+CRITICAL - 2022-10-15 00:32:13 --> Cannot declare class Config\App, because the name is already in use
+in APPPATH/Config/App.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-15 00:32:53 --> Cannot declare class Config\App, because the name is already in use
+in APPPATH/Config/App.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-15 00:33:43 --> Cannot declare class Config\App, because the name is already in use
+in APPPATH/Config/App.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
