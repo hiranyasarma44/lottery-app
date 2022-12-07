@@ -26,7 +26,7 @@ class App extends BaseConfig
      */
     // public $baseURL = 'http://localhost:8080/';
 
-    public $baseURL = 'http://localhost/lottery';
+    public $baseURL = 'http://localhost:7800';
 
     /**
      * --------------------------------------------------------------------------

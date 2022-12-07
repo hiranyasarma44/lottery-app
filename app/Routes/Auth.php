@@ -1,7 +1,9 @@
 <?php
 // Auth routes
-$loginRoutes = [
+$authRoutes = [
   '/login' => 'LoginController::index',
-  '/auth' => 'LoginController::loginAuth',
+  '/login/auth' => 'LoginController::loginAuth',
+  '/dashboard' => 'LoginController::dashboard'
 ];
-$routes->map($loginRoutes);
+
+$routes->map($authRoutes);

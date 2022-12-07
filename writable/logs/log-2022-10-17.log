@@ -1,0 +1,80 @@
+ERROR - 2022-10-17 23:24:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /home/hiranya/Desktop/Projects/Netro/lottery/main/app/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+#8 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Projects/Netro/lottery/main/index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /home/hiranya/Desktop/Projects/Netro/lottery/main/app/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+#6 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+#7 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/hiranya/Desktop/Projects/Netro/lottery/main/index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-17 23:24:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 23:26:32 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /home/hiranya/Desktop/Projects/Netro/lottery/main/app/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+#7 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+#8 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Projects/Netro/lottery/main/index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /home/hiranya/Desktop/Projects/Netro/lottery/main/app/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+#6 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+#7 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 /home/hiranya/Desktop/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/hiranya/Desktop/Projects/Netro/lottery/main/index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-17 23:26:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\LoginController->loginAuth()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
