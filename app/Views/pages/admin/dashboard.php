@@ -22,20 +22,12 @@
       <svg class="bi pe-none me-2" width="40" height="32">
         <use xlink:href="#bootstrap" />
       </svg>
-      <span class="fs-4">Sidebar</span>
+      <span class="fs-4">Lottery</span>
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16">
-            <use xlink:href="#home" />
-          </svg>
-          Home
-        </a>
-      </li>
       <li>
-        <a href="#" class="nav-link text-white">
+        <a href="#" class="nav-link active">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#speedometer2" />
           </svg>
@@ -47,7 +39,7 @@
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#table" />
           </svg>
-          Orders
+          Games
         </a>
       </li>
       <li>
@@ -55,7 +47,7 @@
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#grid" />
           </svg>
-          Products
+          Results
         </a>
       </li>
       <li>
@@ -63,7 +55,7 @@
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#people-circle" />
           </svg>
-          Customers
+          Members
         </a>
       </li>
     </ul>
