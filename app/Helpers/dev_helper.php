@@ -13,3 +13,11 @@ function require_all($path, $fileExt = 'php', $includeSelf = true){
       }
   }
 }
+
+if(!function_exists('dump')){
+  function dump($data){
+    echo '<pre>';
+    var_dump($data);
+    exit();
+  }
+}

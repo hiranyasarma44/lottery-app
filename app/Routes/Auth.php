@@ -1,9 +1,6 @@
 <?php
 // Auth routes
-$authRoutes = [
-  '/login' => 'LoginController::index',
-  '/login/auth' => 'LoginController::loginAuth',
-  '/dashboard' => 'LoginController::dashboard'
-];
-
-$routes->map($authRoutes);
+$routes->get('/login', 'LoginController::index');
+$routes->post('/login/auth', 'LoginController::loginAuth');
+$routes->get('/dashboard', 'LoginController::dashboard');
+$routes->get('/logout', 'LoginController::logout');
