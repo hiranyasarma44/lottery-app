@@ -1,0 +1,268 @@
+CRITICAL - 2023-01-27 14:45:02 --> Call to undefined function App\Controllers\dump()
+in APPPATH/Controllers/GameController.php on line 149.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-27 14:45:58 --> Call to undefined function App\Controllers\dump()
+in APPPATH/Controllers/GameController.php on line 149.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->delete()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:41:05 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:41:05 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:42:18 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:42:18 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:42:51 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:42:51 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:42:59 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:42:59 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:44:14 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(176): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:44:14 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(176): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:44:34 --> mysqli_sql_exception: Unknown column 'results.ticket_id' in 'on clause' in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:44:34 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:44:58 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(176): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:44:58 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(176): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:45:14 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:45:14 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:45:25 --> mysqli_sql_exception: Unknown column 'results.member_id' in 'on clause' in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:45:25 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:45:29 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/BaseModel.php(523): CodeIgniter\Model->doFind()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#12 {main}
+CRITICAL - 2023-01-27 20:45:29 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 185.
+ 1 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind()
+ 2 APPPATH/Controllers/GameController.php(177): CodeIgniter\BaseModel->find()
+ 3 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-27 20:46:27 --> mysqli_sql_exception: Column 'game_id' in where clause is ambiguous in /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/app/Controllers/GameController.php(177): CodeIgniter\Model->__call()
+#6 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(902): App\Controllers\GameController->getResults()
+#7 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#8 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /home/hiranya/Desktop/Neo/Projects/Netro/lottery/main/system/Commands/Server/rewrite.php(46): require_once('/home/hiranya/D...')
+#11 {main}

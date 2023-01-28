@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 use App\Models\UserModel;
 
-class LoginController extends Controller
+class LoginController extends BaseController
 {
     public function index()
     {
@@ -59,11 +59,15 @@ class LoginController extends Controller
             'isLoggedIn' => false
         ]);
         $session->destroy();
+        return redirect()->to('/login');
     }
     
     public function is_logged_in()
     {
         $session = session();
+        if($this->request->isAjax()){
+            return json_encode(['status' => $session->has('isLoggedIn')]);
+        }
         return $session->has('isLoggedIn');
     }
 }

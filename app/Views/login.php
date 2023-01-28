@@ -9,11 +9,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-secondary">
   <div class="container">
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-center aligns-items-center mt-5">
 
-      <div class="col-6">
+      <div class="col-md-6 border rounded shadow-lg p-5 bg-white">
         <h1>Sign In</h1>
         <?php if (session()->getFlashdata('msg')) : ?>
           <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>

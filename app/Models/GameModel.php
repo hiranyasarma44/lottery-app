@@ -22,7 +22,16 @@ class GameModel extends Model
     // protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        'title'     => 'required|alpha_numeric_space|max_length[255]',
+        'price'     => 'required|numeric|max_length[10]',
+        'descriptions' => 'required|max_length[2000]',
+        // 'banner_image' => 'required|max_size[banner_image,2048]|mime_in[banner_image,image/png,image/jpeg]',
+        'ticket_image' => 'required',
+        'opens_from' => 'required',
+        'held_on' => 'required',
+        'result_date' => 'required'
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
